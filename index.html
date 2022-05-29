@@ -71,6 +71,23 @@
 
             <h1><a href="index.html">Wong Sepele</a></h1>
             <h2 style="color:#fff"><span class="typing" style="color:#12D640"></span></h2>
+            <button onclick="playVid()" type="button">Play musik</button>
+            <button onclick="pauseVid()" type="button">Pause musik</button><br> 
+            <video id="myVideo" width="320" height="176">
+            <source src="https://www.mboxdrive.com/musik.mp3" type="audio/mp3">
+            </video>
+
+            <script> 
+            var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+            vid.play(); 
+} 
+function pauseVid() { 
+  vid.pause(); 
+} 
+            </script>
+            
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li class="active"><a href="#header"> <span>Home</span></a></li>
@@ -632,31 +649,6 @@
             </div>
         </div>
     </section> -->
-
-    <audio
-        autoplay
-        src="https://www.mboxdrive.com/musik.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-    <button onclick="playVid()" type="button">Play musik</button>
-<button onclick="pauseVid()" type="button">Pause musik</button><br> 
-
-<video id="myVideo" width="320" height="176">
-  <source src="https://www.mboxdrive.com/musik.mp3" type="audio/mp3">
-</video>
-
-<script> 
-var vid = document.getElementById("myVideo"); 
-
-function playVid() { 
-  vid.play(); 
-} 
-
-function pauseVid() { 
-  vid.pause(); 
-} 
-</script
 
 
     <!-- End Skills Section -->
