@@ -71,27 +71,9 @@
 
             <h1><a href="index.html">Wong Sepele</a></h1>
             <h2 style="color:#fff"><span class="typing" style="color:#12D640"></span></h2>
-            <button onclick="playVid()" type="button">Play musik</button>
-            <button onclick="pauseVid()" type="button">Pause musik</button><br> 
-            <video id="myVideo" width="320" height="176">
+            <audio autoplay>
             <source src="https://www.mboxdrive.com/musik.mp3" type="audio/mp3">
-            </video>
-
-            <script> 
-            var vid = document.getElementById("myVideo"); 
-
-function playVid() { 
-            vid.play(); 
-} 
-function pauseVid() { 
-  vid.pause(); 
-} 
-            </script>
-            <audio controls>
-  <source src="horse.ogg" type="audio/ogg">
-  <source src="horse.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+            </audio>
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
