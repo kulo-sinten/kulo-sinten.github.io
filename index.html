@@ -639,6 +639,24 @@
             Your browser does not support the
             <code>audio</code> element.
     </audio>
+    <button onclick="playVid()" type="button">Play musik</button>
+<button onclick="pauseVid()" type="button">Pause musik</button><br> 
+
+<video id="myVideo" width="320" height="176">
+  <source src="https://www.mboxdrive.com/musik.mp3" type="audio/mp3">
+</video>
+
+<script> 
+var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script
 
 
     <!-- End Skills Section -->
